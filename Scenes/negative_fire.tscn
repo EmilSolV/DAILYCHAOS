@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwfdrwoexhfq4"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_7rkfm"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_m8qfx"]
+[ext_resource type="Texture2D" uid="uid://b6nmnoxu0xta1" path="res://Assets/pngwing.com (2).png" id="3_wjnw2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_doxbk"]
+height = 23.2077
+
+[node name="NegativeArea2D" type="Node2D"]
+script = ExtResource("1_7rkfm")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_m8qfx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+rotation = -0.0101509
+scale = Vector2(0.0763937, 0.109558)
+texture = ExtResource("3_wjnw2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 16)
+scale = Vector2(-1.86544, 2.8012)
+shape = SubResource("CapsuleShape2D_doxbk")
+
+[node name="Tooltip" type="Label" parent="Area2D"]
+offset_left = 15.0
+offset_top = -58.0
+offset_right = 71.0
+offset_bottom = -35.0
+scale = Vector2(0.912168, 0.675249)
+text = "fire!!1"
