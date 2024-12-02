@@ -1,17 +1,47 @@
-[gd_scene load_steps=14 format=3 uid="uid://chswcsibpon7g"]
+[gd_scene load_steps=56 format=3 uid="uid://chswcsibpon7g"]
 
-[ext_resource type="Texture2D" uid="uid://csx2epuhdn5em" path="res://icon.svg" id="1_3s10c"]
-[ext_resource type="Texture2D" uid="uid://cyvxemwjhkwg" path="res://Assets/d503f987ed3bbff4786dcfa314b9d387.jpg" id="2_ag4fv"]
+[ext_resource type="Texture2D" uid="uid://ktgxk81vxprk" path="res://icon.svg" id="1_3s10c"]
+[ext_resource type="Script" path="res://Scripts/MainSceneScript.cs" id="1_rxysu"]
+[ext_resource type="Texture2D" uid="uid://d1xbqgi1xjftn" path="res://Assets/FONDOOO.png" id="3_onmou"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="3_ql75r"]
-[ext_resource type="Texture2D" uid="uid://cjyxedrckpwd0" path="res://Assets/—Pngtree—character pixel art man_6178368.png" id="4_t6ocu"]
+[ext_resource type="Script" path="res://Scripts/GameManager.cs" id="3_w8vtg"]
+[ext_resource type="AudioStream" uid="uid://5frvi5w1r8qn" path="res://Assets/Audio/ETAPA1_LOOP.wav" id="4_opgsf"]
+[ext_resource type="FontFile" uid="uid://csg3d4hbofta7" path="res://Assets/Fonts/8bitOperatorPlus8-Bold.ttf" id="4_qahjh"]
+[ext_resource type="AudioStream" uid="uid://jnh4sanj8b18" path="res://Assets/Audio/ETAPA1_FIN.wav" id="5_6lhpq"]
+[ext_resource type="Texture2D" uid="uid://svio0iakn3ft" path="res://Assets/ZZ.png" id="5_10dnu"]
 [ext_resource type="Script" path="res://Scripts/ObjectSpawner.cs" id="5_37pyu"]
-[ext_resource type="PackedScene" uid="uid://bportvkpmfpvk" path="res://Scenes/positive_boyfriend.tscn" id="6_rjgis"]
-[ext_resource type="PackedScene" uid="uid://dqo0105r664a3" path="res://Scenes/positive_cupcake.tscn" id="7_t8wyh"]
-[ext_resource type="PackedScene" uid="uid://dijurr68wen5y" path="res://Scenes/positive_videogame.tscn" id="8_gm2hn"]
-[ext_resource type="PackedScene" uid="uid://fsabbijoq4ds" path="res://Scenes/negative_knife.tscn" id="9_mqnnx"]
-[ext_resource type="PackedScene" uid="uid://bwfdrwoexhfq4" path="res://Scenes/negative_fire.tscn" id="10_j0xcl"]
+[ext_resource type="Script" path="res://Scripts/ScorePoints.cs" id="5_m2lvn"]
+[ext_resource type="AudioStream" uid="uid://nxwjayrcwp34" path="res://Assets/Audio/ETAPA2_LOOP.wav" id="6_et6ee"]
+[ext_resource type="AudioStream" uid="uid://bgod2syccl7uw" path="res://Assets/Audio/ETAPA2_FIN.wav" id="7_mhv10"]
+[ext_resource type="AudioStream" uid="uid://dcep317ogxa08" path="res://Assets/Audio/ETAPA3_LOOP.wav" id="8_32tcf"]
+[ext_resource type="AudioStream" uid="uid://b4m1063bansg3" path="res://Assets/Audio/ETAPA3_FIN.wav" id="9_y22kf"]
+[ext_resource type="AudioStream" uid="uid://dkcc41q5mwxkf" path="res://Assets/Audio/ETAPA4_LOOP.wav" id="10_sm467"]
+[ext_resource type="AudioStream" uid="uid://dl4bmek4a04je" path="res://Assets/Audio/ETAPA4_FIN.wav" id="11_3dm0v"]
+[ext_resource type="AudioStream" uid="uid://dpckadh4w62w" path="res://Assets/Audio/agarrabien.wav" id="12_3evd3"]
+[ext_resource type="Script" path="res://Scripts/StageManagerScript.cs" id="12_4oj8j"]
+[ext_resource type="Script" path="res://Scripts/TimerLabel.cs" id="13_4qxdl"]
+[ext_resource type="AudioStream" uid="uid://bg6urlxqyke6f" path="res://Assets/Audio/agarramal.wav" id="13_sbwml"]
+[ext_resource type="AudioStream" uid="uid://h0bhw7uxonir" path="res://Assets/Audio/VICTORIA_.wav" id="14_twdgu"]
+[ext_resource type="AudioStream" uid="uid://pyv6ax2guwat" path="res://Assets/Audio/LOOPMENUUUU.wav" id="17_rvvxp"]
+[ext_resource type="Script" path="res://Scripts/AudioStreamPlayer2d.cs" id="18_8cb6a"]
+[ext_resource type="PackedScene" uid="uid://bhrk6t3lilxeu" path="res://Scenes/amiguis.tscn" id="20_gxb32"]
+[ext_resource type="PackedScene" uid="uid://cm3xvcshqahjq" path="res://Scenes/anime.tscn" id="21_wnd61"]
+[ext_resource type="PackedScene" uid="uid://c526r8y16blm2" path="res://Scenes/barrer.tscn" id="22_3lu1p"]
+[ext_resource type="PackedScene" uid="uid://cvw1xec6c3u8f" path="res://Scenes/cerveza.tscn" id="23_reymk"]
+[ext_resource type="PackedScene" uid="uid://cc38ug0iydvvm" path="res://Scenes/cocinar.tscn" id="24_njcq7"]
+[ext_resource type="PackedScene" uid="uid://bjmeyplvlkfhx" path="res://Scenes/dormir.tscn" id="25_7lst1"]
+[ext_resource type="PackedScene" uid="uid://bhj85bn10s8de" path="res://Scenes/examen.tscn" id="26_kl8c8"]
+[ext_resource type="PackedScene" uid="uid://d0nfkhpwswn0v" path="res://Scenes/gimnasio.tscn" id="27_iblqx"]
+[ext_resource type="PackedScene" uid="uid://nssqd6ugqiv0" path="res://Scenes/jefe.tscn" id="28_d3gkb"]
+[ext_resource type="PackedScene" uid="uid://c6v5dvirqxelx" path="res://Scenes/mails.tscn" id="29_onry7"]
+[ext_resource type="PackedScene" uid="uid://drj1qyj65hm7r" path="res://Scenes/platos.tscn" id="30_wjiuh"]
+[ext_resource type="PackedScene" uid="uid://cra2t3u6i6k34" path="res://Scenes/reunion.tscn" id="31_l7qdo"]
+[ext_resource type="PackedScene" uid="uid://caqm4xkkpyrqk" path="res://Scenes/ropa.tscn" id="32_aqfq6"]
+[ext_resource type="PackedScene" uid="uid://clvsuraxvyqrg" path="res://Scenes/tearea.tscn" id="33_ujnao"]
+[ext_resource type="PackedScene" uid="uid://b84tmhb4fqh7c" path="res://Scenes/TODO.tscn" id="34_mvxsx"]
+[ext_resource type="PackedScene" uid="uid://cphpwkvjhurg0" path="res://Scenes/trabajogrupal.tscn" id="35_d14lj"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqmix"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4rwu"]
 texture = ExtResource("1_3s10c")
 0:0/0 = 0
 1:0/0 = 0
@@ -79,50 +109,197 @@ texture = ExtResource("1_3s10c")
 7:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_xfdas"]
-sources/2 = SubResource("TileSetAtlasSource_xqmix")
+sources/2 = SubResource("TileSetAtlasSource_k4rwu")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmky5"]
+size = Vector2(1.28483, 49.3796)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5popu"]
+size = Vector2(1.18246, 59.4302)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_08wbp"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_66fuh"]
+outlines = Array[PackedVector2Array]([PackedVector2Array(0.941582, 1.85847, 0.497221, 0.973485, -0.0231266, 0.973485, -0.0545126, 1.16228, -0.206487, 1.16818, -0.204835, 0.932186, -0.455924, 0.926286, -0.716923, 1.51628, -0.639284, 1.69917, -0.682234, 1.88797, -0.422886, 1.88797, -0.336987, 1.72867, -0.292386, 1.75227, -0.232918, 1.58118, -0.0726835, 1.65198, -0.0462531, 1.57528, -0.0396455, 1.35108, 0.0743354, 1.29798, 0.107373, 1.35108, 0.178405, 1.32748, 0.275867, 1.33338, 0.351854, 1.33928, 0.47905, 1.35698, 0.67067, 1.89387)])
+
+[sub_resource type="LabelSettings" id="LabelSettings_wu7j0"]
+font = ExtResource("4_qahjh")
+font_size = 30
+font_color = Color(1, 1, 0.627451, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_sw5sy"]
+font = ExtResource("4_qahjh")
+font_size = 40
+font_color = Color(1, 1, 0.627451, 1)
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jq8ed"]
+font = ExtResource("4_qahjh")
+font_size = 30
+
+[sub_resource type="Theme" id="Theme_voldu"]
+Label/fonts/font = ExtResource("4_qahjh")
+
+[sub_resource type="LabelSettings" id="LabelSettings_53cca"]
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hfn3k"]
+font = ExtResource("4_qahjh")
+font_size = 50
+font_color = Color(1, 1, 0.6, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kevev"]
+font = ExtResource("4_qahjh")
+font_size = 50
+font_color = Color(1, 0.789518, 0.948343, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gvw8s"]
+font = ExtResource("4_qahjh")
+font_size = 50
+font_color = Color(1, 1, 0.729412, 1)
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6bv62"]
+font = ExtResource("4_qahjh")
+font_size = 50
+font_color = Color(1, 1, 0.580392, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_rxysu")
+
+[node name="AudioManager" type="Node" parent="."]
+
+[node name="Background" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("17_rvvxp")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa1_loop" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("4_opgsf")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa1_fin" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("5_6lhpq")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa2_loop" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("6_et6ee")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa2_fin" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("7_mhv10")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa3_loop" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("8_32tcf")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa3_fin" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("9_y22kf")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa4_loop" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("10_sm467")
+script = ExtResource("18_8cb6a")
+
+[node name="Etapa4_fin" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("11_3dm0v")
+script = ExtResource("18_8cb6a")
+
+[node name="GoodSound" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("12_3evd3")
+script = ExtResource("18_8cb6a")
+
+[node name="BadSound" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("13_sbwml")
+script = ExtResource("18_8cb6a")
+
+[node name="VICTORY" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("14_twdgu")
+script = ExtResource("18_8cb6a")
+
+[node name="DEFEAT" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource("14_twdgu")
+script = ExtResource("18_8cb6a")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 323)
+scale = Vector2(169250, 3294.66)
 
 [node name="Background" type="Node" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Background"]
+visible = false
 position = Vector2(572, 323)
 scale = Vector2(7.16, 4)
 tile_set = SubResource("TileSet_xfdas")
 
 [node name="BackgroundSprite" type="Sprite2D" parent="Background"]
-position = Vector2(578.5, 325.75)
 scale = Vector2(2.11213, 2.09871)
-texture = ExtResource("2_ag4fv")
+texture = ExtResource("3_onmou")
 
-[node name="GameManager" type="Node" parent="."]
+[node name="Limits" type="Node" parent="Background"]
 
-[node name="UI" type="Node" parent="."]
+[node name="RightRigidBody2D" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(485, 91)
+rotation = -0.0119818
 
-[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/RightRigidBody2D"]
+position = Vector2(-20.5072, -41.2487)
+rotation = -1.02915
+scale = Vector2(5.15473, 9.86934)
+shape = SubResource("RectangleShape2D_tmky5")
 
-[node name="ScoreLabel" type="Label" parent="UI/CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="LeftRigidBody2D" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(-543, 59)
+rotation = 5.22203
+scale = Vector2(-0.956552, -1.03482)
 
-[node name="HealthBar" type="TextureProgressBar" parent="UI/CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/LeftRigidBody2D"]
+position = Vector2(0.819204, 1.77809)
+rotation = 5.26339
+scale = Vector2(5.16, 9.88)
+shape = SubResource("RectangleShape2D_5popu")
 
-[node name="Timer" type="Label" parent="UI/CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="LeftRigidBody2D2" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(-471, 157)
+rotation = 5.22203
+scale = Vector2(-0.628374, 0.573603)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/LeftRigidBody2D2"]
+position = Vector2(0.819204, 1.77809)
+rotation = 5.26339
+scale = Vector2(5.16, 9.88)
+shape = SubResource("RectangleShape2D_5popu")
+
+[node name="LeftRigidBody2D3" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(490, 168)
+rotation = 5.22203
+scale = Vector2(-0.628374, 0.573603)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/LeftRigidBody2D3"]
+position = Vector2(0.819204, 1.77809)
+rotation = 5.26339
+scale = Vector2(5.16, 9.88)
+shape = SubResource("RectangleShape2D_5popu")
 
 [node name="Player" type="Node" parent="."]
 
 [node name="Player" type="Node2D" parent="Player"]
+position = Vector2(11, 219)
 
 [node name="PlayerBody" type="CharacterBody2D" parent="Player/Player"]
+position = Vector2(2, -2)
 script = ExtResource("3_ql75r")
 Speed = 500.0
 
@@ -130,21 +307,194 @@ Speed = 500.0
 visible = false
 
 [node name="PlayerSprite" type="Sprite2D" parent="Player/Player/PlayerBody"]
-position = Vector2(621, 472)
-scale = Vector2(0.240001, 0.280001)
-texture = ExtResource("4_t6ocu")
+position = Vector2(1, -130)
+scale = Vector2(0.344371, 0.369727)
+texture = ExtResource("5_10dnu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Player/PlayerBody"]
-position = Vector2(621, 461)
+position = Vector2(1, -131)
 scale = Vector2(-3.06369, -9.06631)
 shape = SubResource("CapsuleShape2D_08wbp")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Player/Player/PlayerBody"]
+visible = false
+position = Vector2(-6, -211)
+rotation = 3.14159
+scale = Vector2(605.364, -169.494)
+navigation_polygon = SubResource("NavigationPolygon_66fuh")
 
 [node name="Objects" type="Node" parent="."]
 
 [node name="ObjectSpawner" type="Node2D" parent="Objects"]
-scale = Vector2(1.00825, 0.99084)
+position = Vector2(-1, -1)
+scale = Vector2(0.995042, 0.987702)
 script = ExtResource("5_37pyu")
-PositiveObjects = [ExtResource("6_rjgis"), ExtResource("7_t8wyh"), ExtResource("8_gm2hn")]
-NegativeObjects = [ExtResource("9_mqnnx"), ExtResource("10_j0xcl")]
+PositiveObjects = [ExtResource("20_gxb32"), ExtResource("21_wnd61"), ExtResource("22_3lu1p"), ExtResource("23_reymk"), ExtResource("24_njcq7"), ExtResource("25_7lst1"), ExtResource("26_kl8c8"), ExtResource("27_iblqx"), ExtResource("28_d3gkb"), ExtResource("29_onry7"), ExtResource("30_wjiuh"), ExtResource("31_l7qdo"), ExtResource("32_aqfq6"), ExtResource("33_ujnao"), ExtResource("34_mvxsx"), ExtResource("35_d14lj"), null, null, null, null]
+SpawnInterval = 0.5
 
 [node name="Objects" type="Node2D" parent="Objects"]
+
+[node name="StageManagerScript" type="Node" parent="."]
+script = ExtResource("12_4oj8j")
+
+[node name="TopicLabel" type="Label" parent="StageManagerScript"]
+offset_left = -86.0
+offset_top = -160.0
+offset_right = 120.0
+offset_bottom = -137.0
+text = "El tema es:"
+label_settings = SubResource("LabelSettings_wu7j0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Topic" type="Label" parent="StageManagerScript"]
+offset_left = -90.0
+offset_top = -123.0
+offset_right = 123.0
+offset_bottom = -62.0
+label_settings = SubResource("LabelSettings_sw5sy")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuto" type="Label" parent="StageManagerScript"]
+offset_left = -184.0
+offset_top = -195.0
+offset_right = 231.0
+offset_bottom = 13.0
+label_settings = SubResource("LabelSettings_jq8ed")
+
+[node name="UI" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
+visible = false
+
+[node name="HealthBar" type="TextureProgressBar" parent="UI/CanvasLayer"]
+offset_left = -531.0
+offset_top = -267.0
+offset_right = -369.0
+offset_bottom = -237.0
+
+[node name="ScoreLabel" type="Label" parent="UI"]
+offset_left = -530.0
+offset_top = -300.0
+offset_right = -304.0
+offset_bottom = -261.0
+theme = SubResource("Theme_voldu")
+text = "PUNTOS:"
+label_settings = SubResource("LabelSettings_53cca")
+
+[node name="ScorePoints" type="Label" parent="UI"]
+offset_left = -271.0
+offset_top = -299.0
+offset_right = -202.0
+offset_bottom = -263.0
+text = "50"
+label_settings = SubResource("LabelSettings_hfn3k")
+script = ExtResource("5_m2lvn")
+
+[node name="TimerLabel" type="Label" parent="UI"]
+offset_left = -23.0
+offset_top = -297.0
+offset_right = 90.0
+offset_bottom = -250.0
+text = "45"
+label_settings = SubResource("LabelSettings_kevev")
+script = ExtResource("13_4qxdl")
+TimeLeft = 45.0
+
+[node name="GameOverMenu" type="Control" parent="UI/TimerLabel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 22.9869
+offset_top = 296.997
+offset_right = 22.9869
+offset_bottom = 296.997
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MessageLabel" type="Label" parent="UI/TimerLabel/GameOverMenu"]
+layout_mode = 0
+offset_left = -289.987
+offset_top = -173.997
+offset_right = 320.013
+offset_bottom = 43.0032
+text = "¡Has ganado!"
+label_settings = SubResource("LabelSettings_gvw8s")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PointsLabel" type="Label" parent="UI/TimerLabel/GameOverMenu"]
+layout_mode = 0
+offset_left = -106.987
+offset_top = 24.0032
+offset_right = 258.013
+offset_bottom = 60.0032
+text = "Puntaje"
+label_settings = SubResource("LabelSettings_gvw8s")
+
+[node name="PointsNumberLabel" type="Label" parent="UI/TimerLabel/GameOverMenu"]
+layout_mode = 0
+offset_left = -19.0
+offset_top = 69.0
+offset_right = 42.0
+offset_bottom = 105.0
+text = "10"
+label_settings = SubResource("LabelSettings_6bv62")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/TimerLabel/GameOverMenu"]
+layout_mode = 0
+offset_left = -89.0
+offset_top = 138.0
+offset_right = 25.0
+offset_bottom = 204.0
+scale = Vector2(1.74362, 1.77556)
+alignment = 1
+
+[node name="RetryButton" type="Button" parent="UI/TimerLabel/GameOverMenu/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.941516, 0.657414, 1, 1)
+theme_override_colors/font_color = Color(1, 0.580934, 0.758424, 1)
+theme_override_fonts/font = ExtResource("4_qahjh")
+text = "Reintentar"
+
+[node name="QuitButton" type="Button" parent="UI/TimerLabel/GameOverMenu/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.941176, 0.658824, 1, 1)
+theme_override_colors/font_color = Color(1, 0.580392, 0.756863, 1)
+theme_override_fonts/font = ExtResource("4_qahjh")
+text = "Salir"
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("3_w8vtg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = -67.0
+offset_right = 38.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.66667, 1.37736)
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "CONTINUAR"
+
+[node name="MenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "MENÚ"
+
+[connection signal="pressed" from="UI/TimerLabel/GameOverMenu/VBoxContainer/RetryButton" to="UI/TimerLabel" method="_on_retry_button_pressed"]
+[connection signal="pressed" from="UI/TimerLabel/GameOverMenu/VBoxContainer/QuitButton" to="UI/TimerLabel" method="_on_quit_button_pressed"]

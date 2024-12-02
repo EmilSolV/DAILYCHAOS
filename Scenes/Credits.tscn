@@ -1,0 +1,210 @@
+[gd_scene load_steps=10 format=3 uid="uid://wieudbw7n63q"]
+
+[ext_resource type="Texture2D" uid="uid://csx2epuhdn5em" path="res://icon.svg" id="1_6jthj"]
+[ext_resource type="Texture2D" uid="uid://d1xbqgi1xjftn" path="res://Assets/FONDOOO.png" id="2_x7nrw"]
+[ext_resource type="FontFile" uid="uid://csg3d4hbofta7" path="res://Assets/Fonts/8bitOperatorPlus8-Bold.ttf" id="3_pq35b"]
+[ext_resource type="Script" path="res://Scripts/QuitButtonCredits.cs" id="4_njtse"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_311ml"]
+texture = ExtResource("1_6jthj")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bpyj4"]
+sources/2 = SubResource("TileSetAtlasSource_311ml")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_va4q8"]
+size = Vector2(1.28483, 49.3796)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygr8c"]
+size = Vector2(1.18246, 59.4302)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8373u"]
+font = ExtResource("3_pq35b")
+font_size = 50
+font_color = Color(1, 1, 0.729412, 1)
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Credits" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(169250, 3294.66)
+
+[node name="Background" type="Node" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Background"]
+visible = false
+position = Vector2(572, 323)
+scale = Vector2(7.16, 4)
+tile_set = SubResource("TileSet_bpyj4")
+
+[node name="BackgroundSprite" type="Sprite2D" parent="Background"]
+scale = Vector2(2.11213, 2.09871)
+texture = ExtResource("2_x7nrw")
+
+[node name="Limits" type="Node" parent="Background"]
+
+[node name="RightRigidBody2D" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(485, 91)
+rotation = -0.0119818
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/RightRigidBody2D"]
+position = Vector2(-20.5072, -41.2487)
+rotation = -1.02915
+scale = Vector2(5.15473, 9.86934)
+shape = SubResource("RectangleShape2D_va4q8")
+
+[node name="LeftRigidBody2D" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(-543, 59)
+rotation = 5.22203
+scale = Vector2(-0.956552, -1.03482)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/LeftRigidBody2D"]
+position = Vector2(0.819204, 1.77809)
+rotation = 5.26339
+scale = Vector2(5.16, 9.88)
+shape = SubResource("RectangleShape2D_ygr8c")
+
+[node name="LeftRigidBody2D2" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(-471, 157)
+rotation = 5.22203
+scale = Vector2(-0.628374, 0.573603)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/LeftRigidBody2D2"]
+position = Vector2(0.819204, 1.77809)
+rotation = 5.26339
+scale = Vector2(5.16, 9.88)
+shape = SubResource("RectangleShape2D_ygr8c")
+
+[node name="LeftRigidBody2D3" type="StaticBody2D" parent="Background/Limits"]
+position = Vector2(490, 168)
+rotation = 5.22203
+scale = Vector2(-0.628374, 0.573603)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Limits/LeftRigidBody2D3"]
+position = Vector2(0.819204, 1.77809)
+rotation = 5.26339
+scale = Vector2(5.16, 9.88)
+shape = SubResource("RectangleShape2D_ygr8c")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -637.0
+offset_top = -381.0
+offset_right = -552.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.66667, 1.37736)
+
+[node name="QuitButton" type="Button" parent="Background"]
+offset_left = -74.0
+offset_top = 151.0
+offset_right = 11.0
+offset_bottom = 171.0
+scale = Vector2(1.83942, 2.24691)
+theme_override_colors/font_color = Color(1, 0.648192, 0.984373, 1)
+theme_override_fonts/font = ExtResource("3_pq35b")
+text = "VOLVER"
+script = ExtResource("4_njtse")
+
+[node name="MessageLabel" type="Label" parent="Background"]
+offset_left = -549.0
+offset_top = -120.0
+offset_right = 61.0
+offset_bottom = 97.0
+scale = Vector2(0.985549, 1.09147)
+text = "Pixel Artist
+Music & SFX
+
+Developer
+"
+label_settings = SubResource("LabelSettings_8373u")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MessageLabel2" type="Label" parent="Background"]
+offset_left = -32.0
+offset_top = -115.0
+offset_right = 578.0
+offset_bottom = 102.0
+scale = Vector2(0.985549, 1.09147)
+text = "Malena Calatayú
+
+
+Emil Vásquez
+"
+label_settings = SubResource("LabelSettings_8373u")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="Background/QuitButton" to="Background/QuitButton" method="_on_BackButton_pressed"]

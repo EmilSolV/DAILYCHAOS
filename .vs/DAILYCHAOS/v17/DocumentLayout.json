@@ -1,25 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\emilv\\source\\godot\\dailychaos\\",
+  "WorkspaceRootPath": "C:\\Users\\emilv\\source\\DAILYCHAOS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\godot\\dailychaos\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\mainscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\mainscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\stagemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\stagemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\godot\\dailychaos\\scripts\\collectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\collectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\godot\\dailychaos\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\godot\\dailychaos\\scripts\\movedown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\movedown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\scorepoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\scorepoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\godot\\dailychaos\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\timerlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\timerlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,70 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MoveDown.cs",
-              "DocumentMoniker": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\MoveDown.cs",
-              "RelativeDocumentMoniker": "Scripts\\MoveDown.cs",
-              "ToolTip": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\MoveDown.cs",
-              "RelativeToolTip": "Scripts\\MoveDown.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MainSceneScript.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\MainSceneScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\MainSceneScript.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\MainSceneScript.cs",
+              "RelativeToolTip": "Scripts\\MainSceneScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T05:29:45.159Z",
-              "IsPinned": true
+              "WhenOpened": "2024-12-01T20:22:29.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "TimerLabel.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\SOURCE\\DAILYCHAOS\\Scripts\\TimerLabel.cs",
+              "RelativeDocumentMoniker": "Scripts\\TimerLabel.cs",
+              "ToolTip": "C:\\Users\\emilv\\SOURCE\\DAILYCHAOS\\Scripts\\TimerLabel.cs",
+              "RelativeToolTip": "Scripts\\TimerLabel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:00:41.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScorePoints.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\ScorePoints.cs",
+              "RelativeDocumentMoniker": "Scripts\\ScorePoints.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\ScorePoints.cs",
+              "RelativeToolTip": "Scripts\\ScorePoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:40:58.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwA4AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T04:37:25.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ObjectSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\ObjectSpawner.cs",
-              "RelativeDocumentMoniker": "Scripts\\ObjectSpawner.cs",
-              "ToolTip": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\ObjectSpawner.cs",
-              "RelativeToolTip": "Scripts\\ObjectSpawner.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T05:07:54.019Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Collectible.cs",
-              "DocumentMoniker": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\Collectible.cs",
-              "RelativeDocumentMoniker": "Scripts\\Collectible.cs",
-              "ToolTip": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\Collectible.cs",
-              "RelativeToolTip": "Scripts\\Collectible.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Title": "StageManagerScript.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\StageManagerScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\StageManagerScript.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\StageManagerScript.cs",
+              "RelativeToolTip": "Scripts\\StageManagerScript.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T05:06:24.786Z",
+              "WhenOpened": "2024-12-01T05:29:27.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Scripts\\Player.cs",
-              "ToolTip": "C:\\Users\\emilv\\source\\godot\\dailychaos\\Scripts\\Player.cs",
-              "RelativeToolTip": "Scripts\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ObjectSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\ObjectSpawner.cs",
+              "RelativeDocumentMoniker": "Scripts\\ObjectSpawner.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\ObjectSpawner.cs",
+              "RelativeToolTip": "Scripts\\ObjectSpawner.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T05:29:51.461Z"
+              "WhenOpened": "2024-11-21T05:07:54.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\Player.cs",
+              "RelativeToolTip": "Scripts\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T05:29:51.461Z",
+              "EditorCaption": ""
             }
           ]
         }

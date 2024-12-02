@@ -4,34 +4,63 @@ using System;
 public partial class GameManager : Node
 {
     [Export] public int PlayerHealth = 100; // Salud inicial del jugador.
+    [Export] public int PlayerPoints = 50; // Salud inicial del jugador.
+
+    private ScorePoints scorePointsLabel;
 
     public override void _Ready()
     {
-        // Conectar la señal collected de todos los objetos Collectible en la escena.
-        foreach (Collectible collectible in GetTree().GetNodesInGroup("Collectibles"))
-        {
-            collectible.Connect("collected", new Callable(this, nameof(OnCollectibleCollected)));
-        }
-    }
+        AddToGroup("GameManagers");
 
-    private void OnCollectibleCollected(int points)
+        var scorePointsLabels = GetTree().GetNodesInGroup("ScorePoints");
+        if (scorePointsLabels.Count > 0)
+            scorePointsLabel = GetTree().GetNodesInGroup("ScorePoints")[0] as ScorePoints;
+    }
+  
+
+    public void UpdatePoints(int point)
     {
-        // Disminuir la salud del jugador.
-        if (points > 0)
+        PlayerPoints += point;
+
+        if (PlayerPoints <= 0)
         {
-            PlayerHealth = Math.Min(PlayerHealth + points, 100); // Limitar la salud máxima a 100.
+            PlayerPoints = 0;
+            UpdatePointsDisplay();
+            GameOver();
         }
         else
         {
-            PlayerHealth += points; // Disminuir la salud si los puntos son negativos.
+            UpdatePointsDisplay();
         }
-        GD.Print("Salud del jugador: " + PlayerHealth);
+    }
 
-        // Verificar si la salud del jugador es menor o igual a 0.
+    private void UpdatePointsDisplay()
+    {
+        GD.Print($"Puntos actuales: {PlayerPoints}");
+        // Aquí puedes actualizar tu HUD
+        scorePointsLabel.Text = PlayerPoints.ToString();
+    }
+        private void GameOver()
+    {
+        GD.Print("¡Juego terminado!");
+        // Implementa lógica de finalización o reinicio
+    }
+
+    private void UpdateHealthDisplay()
+    {
+        GD.Print($"Salud actual: {PlayerHealth}");
+        // Aquí puedes actualizar tu HUD
+    }
+
+    public void UpdateHealth(int point)
+    {
+        PlayerHealth += point;
+        PlayerHealth = Mathf.Clamp(PlayerHealth, 0, 100); // Limita la salud entre 0 y 100
+        UpdateHealthDisplay();
+
         if (PlayerHealth <= 0)
         {
-            GD.Print("El jugador ha muerto.");
-            // Aquí puedes agregar lógica adicional para manejar la muerte del jugador.
+            GameOver();
         }
     }
 }

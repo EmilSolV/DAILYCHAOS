@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cphpwkvjhurg0"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_37ygl"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_8nqim"]
+[ext_resource type="Texture2D" uid="uid://6mbw3u2aqkhu" path="res://Assets/iconos/TRABAJOENGRUIPO.png" id="3_t405m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lohlp"]
+
+[node name="CupcakeArea2D" type="Node2D"]
+script = ExtResource("1_37ygl")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_8nqim")
+Points = 15
+Group = "ESTUDIO"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(2, -5)
+scale = Vector2(0.255178, 0.318176)
+texture = ExtResource("3_t405m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.22121, -3.09107)
+shape = SubResource("CircleShape2D_lohlp")
+
+[node name="Tooltip" type="Label" parent="Area2D"]
+offset_left = 22.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -17.0
+scale = Vector2(1.2886, 1.27557)
+text = "trabajo 
+en grupo"
