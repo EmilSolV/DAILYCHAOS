@@ -1,5 +1,4 @@
 ﻿using Godot;
-using static System.Formats.Asn1.AsnWriter;
 
 public partial class Collectible : Area2D
 {
@@ -7,7 +6,7 @@ public partial class Collectible : Area2D
     [Export] public string Group { get; set; } // Ejemplo: "Trabajo", "Salud", etc.
     public string SubType { get; set; } // Ejemplo: "Tareas", "Reuniones"
 
-    private StageManagerScript stageManager;    
+    private StageManagerScript stageManager;
 
     public override void _Ready()
     {
@@ -20,7 +19,7 @@ public partial class Collectible : Area2D
 
         var stageManagers = GetTree().GetNodesInGroup("StageManager");
         if (stageManagers.Count > 0)
-            stageManager = GetTree().GetNodesInGroup("StageManager")[0] as StageManagerScript;       
+            stageManager = GetTree().GetNodesInGroup("StageManager")[0] as StageManagerScript;
     }
 
     private void OnBodyEntered(Node2D body)
@@ -31,20 +30,41 @@ public partial class Collectible : Area2D
 
             if (gameManager != null)
             {
-                gameManager.UpdateHealth(Points);
-
                 if (Group == stageManager.CurrentStageGroup)
                 {
                     gameManager.UpdatePoints(Points);
-                    GD.Print("¡Puntos sumados! Score: " + Points);
+                    PlaySound("GoodSound");
                 }
                 else
                 {
                     gameManager.UpdatePoints(-Points);
-                    GD.Print("Penalización. Score: " + Points);
+                    PlaySound("BadSound");
                 }
             }
-            QueueFree();           
+            QueueFree();
         }
+    }
+
+    private void PlaySound(string soundName)
+    {
+        var audioPlayer = FindAudioPlayerByName(soundName);
+        if (audioPlayer != null)
+        {
+            audioPlayer.Play();
+        }
+    }
+
+    private AudioStreamPlayer FindAudioPlayerByName(string name)
+    {
+        var audioPlayers = GetTree().GetNodesInGroup("AudioStreamPlayer");
+        foreach (var player in audioPlayers)
+        {
+            if (player is AudioStreamPlayer audioPlayer && audioPlayer.Name == name)
+            {
+                audioPlayer.VolumeDb = +10;
+                return audioPlayer;
+            }
+        }
+        return null;
     }
 }

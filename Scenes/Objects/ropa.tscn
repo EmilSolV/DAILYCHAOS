@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://caqm4xkkpyrqk"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_j8exw"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_xr0ac"]
+[ext_resource type="Texture2D" uid="uid://daw70ecby3eld" path="res://Assets/iconos/fashion-2387085_1280.png" id="3_xcuhj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lohlp"]
+
+[node name="CupcakeArea2D" type="Node2D"]
+script = ExtResource("1_j8exw")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_xr0ac")
+Points = 15
+Group = "HOGAR"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-1, 5)
+scale = Vector2(0.0246636, 0.0337367)
+texture = ExtResource("3_xcuhj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.22121, -3.09107)
+shape = SubResource("CircleShape2D_lohlp")

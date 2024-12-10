@@ -17,7 +17,6 @@ public partial class TimerLabel : Label
     {
         AddToGroup("Timer");
         UpdateTimerText();
-        InitializeGameOverMenu();
     }
 
     private void InitializeGameOverMenu()
@@ -29,8 +28,7 @@ public partial class TimerLabel : Label
         continueButton = vContainerBox.GetNode<Button>("RetryButton");
         quitButton = vContainerBox.GetNode<Button>("QuitButton");
         gameManager = GetTree().GetNodesInGroup("GameManagers")[0] as GameManager;
-
-        
+                
         continueButton.Pressed += _on_retry_button_pressed;
         quitButton.Pressed += _on_quit_button_pressed;
     }
@@ -47,18 +45,16 @@ public partial class TimerLabel : Label
         {
             TimeLeft = 0;
             UpdateTimerText();
-
-            // Pausar el juego al terminar el tiempo
-            if (!gameOverMenu.Visible) // Evitar múltiples llamadas
-            {
-                EndTimer();
-            }
+            EndTimer();
+            
         }
     }
 
-    private void EndTimer()
+    public void EndTimer()
     {
         GetTree().Paused = true;
+
+        InitializeGameOverMenu();
 
         gameOverMenu.Visible = true;
 
@@ -67,23 +63,53 @@ public partial class TimerLabel : Label
         if (points == 0)
         {
             messageLabel.Text = "¡Perdiste! :( Ponele más onda la prox";
+            PlaySound("DEFEAT");
         }
-        if (points <= 50)
+        else
         {
-            messageLabel.Text = "gg, seguro puedes hacerlo mejor la prox :)";
+            if (points <= 50)
+            {
+                messageLabel.Text = "gg, seguro puedes hacerlo mejor la prox :)";
+            }
+            else if (points > 50 && points < 100)
+            {
+                messageLabel.Text = "¡Wow! Sos crack";
+            }
+            else if (points > 100 && points < 200)
+            {
+                messageLabel.Text = "Sos el más capito! <3";
+            }
+            else if (points > 200)
+            {
+                messageLabel.Text = "WINNER WINNER CHICKEN DINNER";
+            }
+            PlaySound("VICTORY");
         }
-        else if (points > 50 && points < 100)
+
+        pointsNumberLabel.Text = points.ToString();
+    }
+
+    private void PlaySound(string soundName)
+    {
+        var audioPlayer = FindAudioPlayerByName(soundName);
+        if (audioPlayer != null)
         {
-            messageLabel.Text = "¡Wow! Sos crack";
+            audioPlayer.Play();
         }
-        else if (points > 100 && points < 200)
+    }
+
+    private AudioStreamPlayer FindAudioPlayerByName(string name)
+    {
+        var audioPlayers = GetTree().GetNodesInGroup("AudioStreamPlayer");
+        foreach (var player in audioPlayers)
         {
-            messageLabel.Text = "Sos el más capito! <3";
+            if (player is AudioStreamPlayer audioPlayer && audioPlayer.Name == name)
+            {
+                audioPlayer.VolumeDb = +10;
+                return audioPlayer;
+            }
         }
-        else if (points > 200)
-        {
-            messageLabel.Text = "WINNER WINNER CHICKEN DINNER";
-        }
+        return null;
     }
 
     private void _on_retry_button_pressed()

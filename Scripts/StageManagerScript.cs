@@ -6,6 +6,11 @@ public partial class StageManagerScript : Node
 {
     [Export]
     public float WaitTime = 12.0f; // Public variable to set the timer duration
+    [Export]
+    public int ObjectSpeedUpdate = 60;
+    [Export]
+    public float SpawnIntervalUpdate = 0.8f;
+
     public string CurrentStageGroup { get; private set; } // Grupo válido para la etapa actual
 
     private int currentStageIndex = 0; // Índice de la etapa actual
@@ -66,6 +71,8 @@ public partial class StageManagerScript : Node
 
     public void AdvanceStage()
     {
+        CurrentStageGroup = stageGroups[currentStageIndex];
+        ChangeNodeVisibility(false, CurrentStageGroup);
         currentStageIndex = (currentStageIndex + 1) % stageGroups.Length;
 
         var nombreEtapaAnterior = "Etapa" + etapa + "_loop";
@@ -76,27 +83,40 @@ public partial class StageManagerScript : Node
 
         FindAudioPlayerByName(nombreEtapaAnterior).Stop();
         PlayStageAudio(nombreEtapa, nombreEtapaFin);
+        UpdateObjectSpawnerVelocity();
         UpdateStageAsync();
     }
 
     private async void PlayStageAudio(string nombreEtapa, string nombreEtapaFin)
     {
         var audioPlayer = FindAudioPlayerByName(nombreEtapa);
-        //var audioPlayerFin = FindAudioPlayerByName(nombreEtapaFin);
+        var audioPlayerFin = FindAudioPlayerByName(nombreEtapaFin);
 
         audioPlayer.Play();
         await ToSignal(audioPlayer, "finished");
-        audioPlayer.Stop();
-
-        //audioPlayerFin.Play();
+        //audioPlayer.Stop();
+        audioPlayerFin.Play();
+        await ToSignal(audioPlayerFin, "finished");
     }
 
     private async Task UpdateStageAsync()
     {
         CurrentStageGroup = stageGroups[currentStageIndex];
-        await UpdateTopicLabelAsync();
+        ChangeNodeVisibility(true, CurrentStageGroup);
+        await UpdateTopicLabelAsync();        
+    }
 
-        GD.Print($"Nueva etapa: {CurrentStageGroup}");
+    private void ChangeNodeVisibility(bool visible, string nodeName)
+    {
+        var stageNode = GetNode<Node>("Stages");
+        if (stageNode != null)
+        {
+            var node = stageNode.GetNode<Node2D>(nodeName);
+            if (node != null)
+            {
+                node.Visible = visible;
+            }
+        }
     }
 
     private async Task UpdateTopicLabelAsync()
@@ -108,6 +128,8 @@ public partial class StageManagerScript : Node
         await ToSignal(GetTree().CreateTimer(2.0f), "timeout");
         topic.Visible = false;
         topicLabel.Visible = false;
+
+
     }
 
     private void RandomizeStageGroups()
@@ -121,6 +143,15 @@ public partial class StageManagerScript : Node
             string value = stageGroups[k];
             stageGroups[k] = stageGroups[n];
             stageGroups[n] = value;
+        }
+    }
+
+    private void UpdateObjectSpawnerVelocity()
+    {
+        if (objectSpawner != null)
+        {
+            objectSpawner.ObjectSpeed += ObjectSpeedUpdate;
+            objectSpawner.SpawnInterval -= SpawnIntervalUpdate;
         }
     }
 }

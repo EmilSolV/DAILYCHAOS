@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://wieudbw7n63q"]
+[gd_scene load_steps=11 format=3 uid="uid://wieudbw7n63q"]
 
-[ext_resource type="Texture2D" uid="uid://csx2epuhdn5em" path="res://icon.svg" id="1_6jthj"]
+[ext_resource type="Texture2D" uid="uid://ktgxk81vxprk" path="res://icon.svg" id="1_6jthj"]
+[ext_resource type="Script" path="res://Scripts/CreditsScript.cs" id="1_mtmu8"]
 [ext_resource type="Texture2D" uid="uid://d1xbqgi1xjftn" path="res://Assets/FONDOOO.png" id="2_x7nrw"]
-[ext_resource type="FontFile" uid="uid://csg3d4hbofta7" path="res://Assets/Fonts/8bitOperatorPlus8-Bold.ttf" id="3_pq35b"]
+[ext_resource type="Theme" uid="uid://lwscsr5alf2d" path="res://MainTheme.tres" id="3_1acgh"]
 [ext_resource type="Script" path="res://Scripts/QuitButtonCredits.cs" id="4_njtse"]
+[ext_resource type="AudioStream" uid="uid://pyv6ax2guwat" path="res://Assets/Audio/LOOPMENUUUU.wav" id="6_n3asa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_311ml"]
 texture = ExtResource("1_6jthj")
@@ -81,14 +83,8 @@ size = Vector2(1.28483, 49.3796)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ygr8c"]
 size = Vector2(1.18246, 59.4302)
 
-[sub_resource type="LabelSettings" id="LabelSettings_8373u"]
-font = ExtResource("3_pq35b")
-font_size = 50
-font_color = Color(1, 1, 0.729412, 1)
-outline_size = 12
-outline_color = Color(0, 0, 0, 1)
-
 [node name="Credits" type="Node2D"]
+script = ExtResource("1_mtmu8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(169250, 3294.66)
@@ -170,8 +166,7 @@ offset_top = 151.0
 offset_right = 11.0
 offset_bottom = 171.0
 scale = Vector2(1.83942, 2.24691)
-theme_override_colors/font_color = Color(1, 0.648192, 0.984373, 1)
-theme_override_fonts/font = ExtResource("3_pq35b")
+theme = ExtResource("3_1acgh")
 text = "VOLVER"
 script = ExtResource("4_njtse")
 
@@ -181,12 +176,13 @@ offset_top = -120.0
 offset_right = 61.0
 offset_bottom = 97.0
 scale = Vector2(0.985549, 1.09147)
+theme = ExtResource("3_1acgh")
+theme_override_font_sizes/font_size = 50
 text = "Pixel Artist
 Music & SFX
 
 Developer
 "
-label_settings = SubResource("LabelSettings_8373u")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -197,14 +193,18 @@ offset_top = -115.0
 offset_right = 578.0
 offset_bottom = 102.0
 scale = Vector2(0.985549, 1.09147)
+theme = ExtResource("3_1acgh")
+theme_override_font_sizes/font_size = 50
 text = "Malena Calatayú
 
 
 Emil Vásquez
 "
-label_settings = SubResource("LabelSettings_8373u")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_n3asa")
 
 [connection signal="pressed" from="Background/QuitButton" to="Background/QuitButton" method="_on_BackButton_pressed"]

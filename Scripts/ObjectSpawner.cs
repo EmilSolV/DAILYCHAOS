@@ -5,8 +5,11 @@ using System.Collections.Generic;
 public partial class ObjectSpawner : Node2D
 {
     [Export] public Godot.Collections.Array<PackedScene> PositiveObjects = new Godot.Collections.Array<PackedScene>();
-    [Export] public float SpawnInterval = 1.5f;
+    [Export] public float SpawnInterval = 0.5f;
     [Export] public float ObjectSpeed = 200f;
+    [Export] public int xStart = -466;
+    [Export] public int xEnd = 485;
+    [Export] public float spawnY = -300;
 
     private Random _random = new Random();
     private Vector2 screenSize;
@@ -20,7 +23,6 @@ public partial class ObjectSpawner : Node2D
     public override void _Ready()
     {
         AddToGroup("ObjectSpawner");
-
 
         screenSize = GetViewport().GetVisibleRect().Size;
     }
@@ -46,17 +48,14 @@ public partial class ObjectSpawner : Node2D
 
         if (objectToSpawn != null)
         {
-            Node2D instance = (Node2D)objectToSpawn.Instantiate();
+            Node2D instance = (Node2D)objectToSpawn.Instantiate();            
 
-            float spawnX = _random.Next(- ((int)screenSize.X / 2) -5, (int)screenSize.X / 2 - 5);
-            float spawnY = -300;
+            float spawnX = _random.Next(xStart, xEnd);
             instance.ZIndex = 1;
             instance.Position = new Vector2(spawnX, spawnY);
             AddChild(instance);
 
-            GD.Print("Scripts adjuntos al objeto instanciado:");
             var script = instance.GetScript();
-            GD.Print(script);
 
             var moveDownInstance = instance.GetNode<MoveDown>(".");
             if (moveDownInstance != null)

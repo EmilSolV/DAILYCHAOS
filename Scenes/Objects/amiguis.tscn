@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhrk6t3lilxeu"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_22r2d"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_f56c1"]
+[ext_resource type="Texture2D" uid="uid://b5k2jd8ohaxb1" path="res://Assets/iconos/1141102.png" id="3_q7iaq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lohlp"]
+
+[node name="CupcakeArea2D" type="Node2D"]
+script = ExtResource("1_22r2d")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_f56c1")
+Points = 15
+Group = "OCIO"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(0.0681089, 0.0789941)
+texture = ExtResource("3_q7iaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.22121, -3.09107)
+shape = SubResource("CircleShape2D_lohlp")

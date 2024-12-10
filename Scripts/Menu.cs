@@ -17,7 +17,6 @@ public partial class Menu : Control
         if (audioPlayers.Count > 0)
             audioPlayer = GetTree().GetNodesInGroup("AudioStreamPlayer")[0] as AudioStreamPlayer;
 
-        audioPlayer.Autoplay = true;
         audioPlayer.Play();
     }
 

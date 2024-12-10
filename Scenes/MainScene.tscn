@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://chswcsibpon7g"]
+[gd_scene load_steps=57 format=3 uid="uid://chswcsibpon7g"]
 
 [ext_resource type="Texture2D" uid="uid://ktgxk81vxprk" path="res://icon.svg" id="1_3s10c"]
 [ext_resource type="Script" path="res://Scripts/MainSceneScript.cs" id="1_rxysu"]
@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://5frvi5w1r8qn" path="res://Assets/Audio/ETAPA1_LOOP.wav" id="4_opgsf"]
 [ext_resource type="FontFile" uid="uid://csg3d4hbofta7" path="res://Assets/Fonts/8bitOperatorPlus8-Bold.ttf" id="4_qahjh"]
 [ext_resource type="AudioStream" uid="uid://jnh4sanj8b18" path="res://Assets/Audio/ETAPA1_FIN.wav" id="5_6lhpq"]
-[ext_resource type="Texture2D" uid="uid://svio0iakn3ft" path="res://Assets/ZZ.png" id="5_10dnu"]
+[ext_resource type="Texture2D" uid="uid://svio0iakn3ft" path="res://Assets/iconos/ZZ.png" id="5_10dnu"]
 [ext_resource type="Script" path="res://Scripts/ObjectSpawner.cs" id="5_37pyu"]
 [ext_resource type="Script" path="res://Scripts/ScorePoints.cs" id="5_m2lvn"]
 [ext_resource type="AudioStream" uid="uid://nxwjayrcwp34" path="res://Assets/Audio/ETAPA2_LOOP.wav" id="6_et6ee"]
@@ -22,24 +22,31 @@
 [ext_resource type="Script" path="res://Scripts/TimerLabel.cs" id="13_4qxdl"]
 [ext_resource type="AudioStream" uid="uid://bg6urlxqyke6f" path="res://Assets/Audio/agarramal.wav" id="13_sbwml"]
 [ext_resource type="AudioStream" uid="uid://h0bhw7uxonir" path="res://Assets/Audio/VICTORIA_.wav" id="14_twdgu"]
+[ext_resource type="AudioStream" uid="uid://cj18xdrco6bbe" path="res://Assets/Audio/DERROTA_f.wav" id="15_2w6ie"]
 [ext_resource type="AudioStream" uid="uid://pyv6ax2guwat" path="res://Assets/Audio/LOOPMENUUUU.wav" id="17_rvvxp"]
 [ext_resource type="Script" path="res://Scripts/AudioStreamPlayer2d.cs" id="18_8cb6a"]
-[ext_resource type="PackedScene" uid="uid://bhrk6t3lilxeu" path="res://Scenes/amiguis.tscn" id="20_gxb32"]
-[ext_resource type="PackedScene" uid="uid://cm3xvcshqahjq" path="res://Scenes/anime.tscn" id="21_wnd61"]
-[ext_resource type="PackedScene" uid="uid://c526r8y16blm2" path="res://Scenes/barrer.tscn" id="22_3lu1p"]
-[ext_resource type="PackedScene" uid="uid://cvw1xec6c3u8f" path="res://Scenes/cerveza.tscn" id="23_reymk"]
-[ext_resource type="PackedScene" uid="uid://cc38ug0iydvvm" path="res://Scenes/cocinar.tscn" id="24_njcq7"]
-[ext_resource type="PackedScene" uid="uid://bjmeyplvlkfhx" path="res://Scenes/dormir.tscn" id="25_7lst1"]
-[ext_resource type="PackedScene" uid="uid://bhj85bn10s8de" path="res://Scenes/examen.tscn" id="26_kl8c8"]
-[ext_resource type="PackedScene" uid="uid://d0nfkhpwswn0v" path="res://Scenes/gimnasio.tscn" id="27_iblqx"]
-[ext_resource type="PackedScene" uid="uid://nssqd6ugqiv0" path="res://Scenes/jefe.tscn" id="28_d3gkb"]
-[ext_resource type="PackedScene" uid="uid://c6v5dvirqxelx" path="res://Scenes/mails.tscn" id="29_onry7"]
-[ext_resource type="PackedScene" uid="uid://drj1qyj65hm7r" path="res://Scenes/platos.tscn" id="30_wjiuh"]
-[ext_resource type="PackedScene" uid="uid://cra2t3u6i6k34" path="res://Scenes/reunion.tscn" id="31_l7qdo"]
-[ext_resource type="PackedScene" uid="uid://caqm4xkkpyrqk" path="res://Scenes/ropa.tscn" id="32_aqfq6"]
-[ext_resource type="PackedScene" uid="uid://clvsuraxvyqrg" path="res://Scenes/tearea.tscn" id="33_ujnao"]
-[ext_resource type="PackedScene" uid="uid://b84tmhb4fqh7c" path="res://Scenes/TODO.tscn" id="34_mvxsx"]
-[ext_resource type="PackedScene" uid="uid://cphpwkvjhurg0" path="res://Scenes/trabajogrupal.tscn" id="35_d14lj"]
+[ext_resource type="PackedScene" uid="uid://bhrk6t3lilxeu" path="res://Scenes/Objects/amiguis.tscn" id="20_gxb32"]
+[ext_resource type="PackedScene" uid="uid://cm3xvcshqahjq" path="res://Scenes/Objects/anime.tscn" id="21_wnd61"]
+[ext_resource type="PackedScene" uid="uid://c526r8y16blm2" path="res://Scenes/Objects/barrer.tscn" id="22_3lu1p"]
+[ext_resource type="PackedScene" uid="uid://cvw1xec6c3u8f" path="res://Scenes/Objects/cerveza.tscn" id="23_reymk"]
+[ext_resource type="PackedScene" uid="uid://cc38ug0iydvvm" path="res://Scenes/Objects/cocinar.tscn" id="24_njcq7"]
+[ext_resource type="PackedScene" uid="uid://bjmeyplvlkfhx" path="res://Scenes/Objects/dormir.tscn" id="25_7lst1"]
+[ext_resource type="PackedScene" uid="uid://bhj85bn10s8de" path="res://Scenes/Objects/examen.tscn" id="26_kl8c8"]
+[ext_resource type="PackedScene" uid="uid://d0nfkhpwswn0v" path="res://Scenes/Objects/gimnasio.tscn" id="27_iblqx"]
+[ext_resource type="PackedScene" uid="uid://nssqd6ugqiv0" path="res://Scenes/Objects/jefe.tscn" id="28_d3gkb"]
+[ext_resource type="PackedScene" uid="uid://c6v5dvirqxelx" path="res://Scenes/Objects/mails.tscn" id="29_onry7"]
+[ext_resource type="PackedScene" uid="uid://drj1qyj65hm7r" path="res://Scenes/Objects/platos.tscn" id="30_wjiuh"]
+[ext_resource type="PackedScene" uid="uid://cra2t3u6i6k34" path="res://Scenes/Objects/reunion.tscn" id="31_l7qdo"]
+[ext_resource type="PackedScene" uid="uid://caqm4xkkpyrqk" path="res://Scenes/Objects/ropa.tscn" id="32_aqfq6"]
+[ext_resource type="PackedScene" uid="uid://clvsuraxvyqrg" path="res://Scenes/Objects/tearea.tscn" id="33_ujnao"]
+[ext_resource type="PackedScene" uid="uid://b84tmhb4fqh7c" path="res://Scenes/Objects/TODO.tscn" id="34_mvxsx"]
+[ext_resource type="PackedScene" uid="uid://cphpwkvjhurg0" path="res://Scenes/Objects/trabajogrupal.tscn" id="35_d14lj"]
+[ext_resource type="Theme" uid="uid://lwscsr5alf2d" path="res://MainTheme.tres" id="39_q4pgn"]
+[ext_resource type="Texture2D" uid="uid://dh3uqsmxml2x0" path="res://Assets/iconos/BOSS.png" id="39_u1hy7"]
+[ext_resource type="Texture2D" uid="uid://ta2ucexm8e00" path="res://Assets/iconos/EXAMENES.png" id="40_4asxy"]
+[ext_resource type="Texture2D" uid="uid://bcefgn1k5eonh" path="res://Assets/iconos/sssss.png" id="41_jdx0o"]
+[ext_resource type="Texture2D" uid="uid://b2brg02fc3hvd" path="res://Assets/iconos/uzumaki_naruto.png" id="42_wkb3o"]
+[ext_resource type="PackedScene" uid="uid://c4qgll7sbhhvh" path="res://Scenes/PauseMenu.tscn" id="47_13s5l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4rwu"]
 texture = ExtResource("1_3s10c")
@@ -122,44 +129,11 @@ size = Vector2(1.18246, 59.4302)
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_66fuh"]
 outlines = Array[PackedVector2Array]([PackedVector2Array(0.941582, 1.85847, 0.497221, 0.973485, -0.0231266, 0.973485, -0.0545126, 1.16228, -0.206487, 1.16818, -0.204835, 0.932186, -0.455924, 0.926286, -0.716923, 1.51628, -0.639284, 1.69917, -0.682234, 1.88797, -0.422886, 1.88797, -0.336987, 1.72867, -0.292386, 1.75227, -0.232918, 1.58118, -0.0726835, 1.65198, -0.0462531, 1.57528, -0.0396455, 1.35108, 0.0743354, 1.29798, 0.107373, 1.35108, 0.178405, 1.32748, 0.275867, 1.33338, 0.351854, 1.33928, 0.47905, 1.35698, 0.67067, 1.89387)])
 
-[sub_resource type="LabelSettings" id="LabelSettings_wu7j0"]
-font = ExtResource("4_qahjh")
-font_size = 30
-font_color = Color(1, 1, 0.627451, 1)
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-
 [sub_resource type="LabelSettings" id="LabelSettings_sw5sy"]
 font = ExtResource("4_qahjh")
 font_size = 40
 font_color = Color(1, 1, 0.627451, 1)
 outline_size = 9
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_jq8ed"]
-font = ExtResource("4_qahjh")
-font_size = 30
-
-[sub_resource type="Theme" id="Theme_voldu"]
-Label/fonts/font = ExtResource("4_qahjh")
-
-[sub_resource type="LabelSettings" id="LabelSettings_53cca"]
-font_size = 50
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_hfn3k"]
-font = ExtResource("4_qahjh")
-font_size = 50
-font_color = Color(1, 1, 0.6, 1)
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_kevev"]
-font = ExtResource("4_qahjh")
-font_size = 50
-font_color = Color(1, 0.789518, 0.948343, 1)
-outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_gvw8s"]
@@ -177,6 +151,7 @@ outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
 [node name="MainScene" type="Node2D"]
+process_mode = 1
 script = ExtResource("1_rxysu")
 
 [node name="AudioManager" type="Node" parent="."]
@@ -230,7 +205,7 @@ stream = ExtResource("14_twdgu")
 script = ExtResource("18_8cb6a")
 
 [node name="DEFEAT" type="AudioStreamPlayer" parent="AudioManager"]
-stream = ExtResource("14_twdgu")
+stream = ExtResource("15_2w6ie")
 script = ExtResource("18_8cb6a")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -326,24 +301,26 @@ navigation_polygon = SubResource("NavigationPolygon_66fuh")
 [node name="Objects" type="Node" parent="."]
 
 [node name="ObjectSpawner" type="Node2D" parent="Objects"]
-position = Vector2(-1, -1)
 scale = Vector2(0.995042, 0.987702)
 script = ExtResource("5_37pyu")
 PositiveObjects = [ExtResource("20_gxb32"), ExtResource("21_wnd61"), ExtResource("22_3lu1p"), ExtResource("23_reymk"), ExtResource("24_njcq7"), ExtResource("25_7lst1"), ExtResource("26_kl8c8"), ExtResource("27_iblqx"), ExtResource("28_d3gkb"), ExtResource("29_onry7"), ExtResource("30_wjiuh"), ExtResource("31_l7qdo"), ExtResource("32_aqfq6"), ExtResource("33_ujnao"), ExtResource("34_mvxsx"), ExtResource("35_d14lj"), null, null, null, null]
-SpawnInterval = 0.5
+SpawnInterval = 0.4
+ObjectSpeed = 120.0
 
 [node name="Objects" type="Node2D" parent="Objects"]
 
 [node name="StageManagerScript" type="Node" parent="."]
 script = ExtResource("12_4oj8j")
+ObjectSpeedUpdate = 80
+SpawnIntervalUpdate = 1.5
 
 [node name="TopicLabel" type="Label" parent="StageManagerScript"]
 offset_left = -86.0
 offset_top = -160.0
 offset_right = 120.0
 offset_bottom = -137.0
+theme = ExtResource("39_q4pgn")
 text = "El tema es:"
-label_settings = SubResource("LabelSettings_wu7j0")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -352,58 +329,192 @@ offset_left = -90.0
 offset_top = -123.0
 offset_right = 123.0
 offset_bottom = -62.0
+theme = ExtResource("39_q4pgn")
+theme_override_font_sizes/font_size = 40
+text = "PRUEBA"
 label_settings = SubResource("LabelSettings_sw5sy")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Tuto" type="Label" parent="StageManagerScript"]
+visible = false
 offset_left = -184.0
 offset_top = -195.0
 offset_right = 231.0
 offset_bottom = 13.0
-label_settings = SubResource("LabelSettings_jq8ed")
+theme = ExtResource("39_q4pgn")
+text = "DAILYCHAOS: vas a tener que agarrar las cosas por tandas"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="UI" type="Node" parent="."]
+[node name="Stages" type="Node" parent="StageManagerScript"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
+[node name="Button" type="Button" parent="StageManagerScript/Stages"]
+offset_left = 484.0
+offset_top = -238.0
+offset_right = 492.0
+offset_bottom = -230.0
+scale = Vector2(10.9994, 66.6171)
+
+[node name="TRABAJO" type="Node2D" parent="StageManagerScript/Stages"]
 visible = false
+position = Vector2(380, -208)
+scale = Vector2(0.632377, 0.712405)
 
-[node name="HealthBar" type="TextureProgressBar" parent="UI/CanvasLayer"]
-offset_left = -531.0
-offset_top = -267.0
-offset_right = -369.0
-offset_bottom = -237.0
+[node name="Stage" type="Label" parent="StageManagerScript/Stages/TRABAJO"]
+offset_left = 165.0
+offset_top = 24.0
+offset_right = 306.0
+offset_bottom = 47.0
+theme = ExtResource("39_q4pgn")
+text = "TRABAJO
+"
 
-[node name="ScoreLabel" type="Label" parent="UI"]
+[node name="Sprite2D" type="Sprite2D" parent="StageManagerScript/Stages/TRABAJO"]
+position = Vector2(232.456, 89.8365)
+texture = ExtResource("39_u1hy7")
+
+[node name="Jefe" type="Label" parent="StageManagerScript/Stages/TRABAJO"]
+offset_left = 165.0
+offset_top = 114.711
+offset_right = 306.0
+offset_bottom = 137.711
+theme = ExtResource("39_q4pgn")
+text = "jefe"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ESTUDIO" type="Node2D" parent="StageManagerScript/Stages"]
+visible = false
+position = Vector2(380, -208)
+scale = Vector2(0.632377, 0.712405)
+
+[node name="Stage" type="Label" parent="StageManagerScript/Stages/ESTUDIO"]
+offset_left = 165.0
+offset_top = 24.0
+offset_right = 306.0
+offset_bottom = 47.0
+theme = ExtResource("39_q4pgn")
+text = "ESTUDIO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="StageManagerScript/Stages/ESTUDIO"]
+position = Vector2(232.456, 89.8365)
+scale = Vector2(0.765929, 0.684259)
+texture = ExtResource("40_4asxy")
+
+[node name="examen" type="Label" parent="StageManagerScript/Stages/ESTUDIO"]
+offset_left = 165.0
+offset_top = 114.711
+offset_right = 306.0
+offset_bottom = 137.711
+theme = ExtResource("39_q4pgn")
+text = "examen"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HOGAR" type="Node2D" parent="StageManagerScript/Stages"]
+visible = false
+position = Vector2(380, -208)
+scale = Vector2(0.632377, 0.712405)
+
+[node name="Stage" type="Label" parent="StageManagerScript/Stages/HOGAR"]
+offset_left = 165.0
+offset_top = 24.0
+offset_right = 306.0
+offset_bottom = 47.0
+theme = ExtResource("39_q4pgn")
+text = "HOGAR
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="StageManagerScript/Stages/HOGAR"]
+position = Vector2(234.038, 82.8181)
+scale = Vector2(0.1409, 0.119201)
+texture = ExtResource("41_jdx0o")
+
+[node name="barrer" type="Label" parent="StageManagerScript/Stages/HOGAR"]
+offset_left = 165.0
+offset_top = 114.711
+offset_right = 306.0
+offset_bottom = 137.711
+theme = ExtResource("39_q4pgn")
+text = "barrer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OCIO" type="Node2D" parent="StageManagerScript/Stages"]
+visible = false
+position = Vector2(380, -208)
+scale = Vector2(0.632377, 0.712405)
+
+[node name="Stage" type="Label" parent="StageManagerScript/Stages/OCIO"]
+offset_left = 165.0
+offset_top = 24.0
+offset_right = 306.0
+offset_bottom = 47.0
+theme = ExtResource("39_q4pgn")
+text = "OCIO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="StageManagerScript/Stages/OCIO"]
+position = Vector2(234.038, 82.8181)
+scale = Vector2(0.257747, 0.203479)
+texture = ExtResource("42_wkb3o")
+
+[node name="anime" type="Label" parent="StageManagerScript/Stages/OCIO"]
+offset_left = 165.0
+offset_top = 114.711
+offset_right = 306.0
+offset_bottom = 137.711
+theme = ExtResource("39_q4pgn")
+text = "anime"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("3_w8vtg")
+
+[node name="ScoreLabel" type="Label" parent="GameManager"]
 offset_left = -530.0
 offset_top = -300.0
 offset_right = -304.0
 offset_bottom = -261.0
-theme = SubResource("Theme_voldu")
+theme = ExtResource("39_q4pgn")
+theme_override_colors/font_color = Color(1, 0.917647, 1, 1)
+theme_override_font_sizes/font_size = 50
 text = "PUNTOS:"
-label_settings = SubResource("LabelSettings_53cca")
 
-[node name="ScorePoints" type="Label" parent="UI"]
+[node name="ScorePoints" type="Label" parent="GameManager"]
 offset_left = -271.0
 offset_top = -299.0
 offset_right = -202.0
 offset_bottom = -263.0
+theme = ExtResource("39_q4pgn")
+theme_override_font_sizes/font_size = 50
 text = "50"
-label_settings = SubResource("LabelSettings_hfn3k")
 script = ExtResource("5_m2lvn")
 
-[node name="TimerLabel" type="Label" parent="UI"]
+[node name="TimerLabel" type="Label" parent="GameManager"]
 offset_left = -23.0
 offset_top = -297.0
 offset_right = 90.0
 offset_bottom = -250.0
+theme = ExtResource("39_q4pgn")
+theme_override_colors/font_color = Color(1, 0.729412, 0.94902, 1)
+theme_override_font_sizes/font_size = 50
 text = "45"
-label_settings = SubResource("LabelSettings_kevev")
 script = ExtResource("13_4qxdl")
 TimeLeft = 45.0
 
-[node name="GameOverMenu" type="Control" parent="UI/TimerLabel"]
+[node name="GameOverMenu" type="Control" parent="GameManager/TimerLabel"]
+process_mode = 3
 visible = false
+z_index = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -417,84 +528,71 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="MessageLabel" type="Label" parent="UI/TimerLabel/GameOverMenu"]
+[node name="MessageLabel" type="Label" parent="GameManager/TimerLabel/GameOverMenu"]
 layout_mode = 0
 offset_left = -289.987
 offset_top = -173.997
 offset_right = 320.013
 offset_bottom = 43.0032
-text = "¡Has ganado!"
-label_settings = SubResource("LabelSettings_gvw8s")
+theme_override_colors/font_color = Color(0.764706, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "SEGUI PARTICIPANDO"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="PointsLabel" type="Label" parent="UI/TimerLabel/GameOverMenu"]
+[node name="PointsLabel" type="Label" parent="GameManager/TimerLabel/GameOverMenu"]
 layout_mode = 0
 offset_left = -106.987
 offset_top = 24.0032
 offset_right = 258.013
 offset_bottom = 60.0032
-text = "Puntaje"
+text = "Puntaje:"
 label_settings = SubResource("LabelSettings_gvw8s")
 
-[node name="PointsNumberLabel" type="Label" parent="UI/TimerLabel/GameOverMenu"]
+[node name="PointsNumberLabel" type="Label" parent="GameManager/TimerLabel/GameOverMenu"]
 layout_mode = 0
-offset_left = -19.0
-offset_top = 69.0
-offset_right = 42.0
-offset_bottom = 105.0
-text = "10"
+offset_left = -57.9869
+offset_top = 81.003
+offset_right = 90.0131
+offset_bottom = 117.003
+text = "0
+"
 label_settings = SubResource("LabelSettings_6bv62")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/TimerLabel/GameOverMenu"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GameManager/TimerLabel/GameOverMenu"]
+process_mode = 3
 layout_mode = 0
-offset_left = -89.0
-offset_top = 138.0
-offset_right = 25.0
-offset_bottom = 204.0
+offset_left = -106.987
+offset_top = 136.003
+offset_right = 33.0131
+offset_bottom = 202.003
 scale = Vector2(1.74362, 1.77556)
 alignment = 1
 
-[node name="RetryButton" type="Button" parent="UI/TimerLabel/GameOverMenu/VBoxContainer"]
+[node name="RetryButton" type="Button" parent="GameManager/TimerLabel/GameOverMenu/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("39_q4pgn")
 theme_override_colors/font_hover_color = Color(0.941516, 0.657414, 1, 1)
-theme_override_colors/font_color = Color(1, 0.580934, 0.758424, 1)
 theme_override_fonts/font = ExtResource("4_qahjh")
 text = "Reintentar"
 
-[node name="QuitButton" type="Button" parent="UI/TimerLabel/GameOverMenu/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="GameManager/TimerLabel/GameOverMenu/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("39_q4pgn")
 theme_override_colors/font_hover_color = Color(0.941176, 0.658824, 1, 1)
-theme_override_colors/font_color = Color(1, 0.580392, 0.756863, 1)
-theme_override_fonts/font = ExtResource("4_qahjh")
 text = "Salir"
 
-[node name="GameManager" type="Node" parent="."]
-script = ExtResource("3_w8vtg")
+[node name="PauseMenu" parent="." instance=ExtResource("47_13s5l")]
+process_mode = 3
+z_index = 1
+offset_left = -23.0
+offset_top = 13.0
+offset_right = -23.0
+offset_bottom = 13.0
+scale = Vector2(0.714142, 0.780036)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -65.0
-offset_top = -67.0
-offset_right = 38.0
-offset_bottom = 34.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.66667, 1.37736)
-
-[node name="ContinueButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "CONTINUAR"
-
-[node name="MenuButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "MENÚ"
-
-[connection signal="pressed" from="UI/TimerLabel/GameOverMenu/VBoxContainer/RetryButton" to="UI/TimerLabel" method="_on_retry_button_pressed"]
-[connection signal="pressed" from="UI/TimerLabel/GameOverMenu/VBoxContainer/QuitButton" to="UI/TimerLabel" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="GameManager/TimerLabel/GameOverMenu/VBoxContainer/RetryButton" to="PauseMenu" method="_on_RetryButton_pressed"]
+[connection signal="pressed" from="GameManager/TimerLabel/GameOverMenu/VBoxContainer/QuitButton" to="PauseMenu" method="_on_menu_button_pressed"]

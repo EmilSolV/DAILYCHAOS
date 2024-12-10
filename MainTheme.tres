@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://lwscsr5alf2d"]
+
+[ext_resource type="FontFile" uid="uid://csg3d4hbofta7" path="res://Assets/Fonts/8bitOperatorPlus8-Bold.ttf" id="1_aojvb"]
+[ext_resource type="StyleBox" uid="uid://cs8n6vcyjgo1f" path="res://Buttons style/pressed.tres" id="2_xyd4m"]
+[ext_resource type="StyleBox" uid="uid://c41qadffpdb2m" path="res://Buttons style/hover.tres" id="2_yi5rd"]
+[ext_resource type="StyleBox" uid="uid://bojsk7mbry01w" path="res://Buttons style/normal.tres" id="3_c6457"]
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0.631262, 0.107139, 0.45785, 1)
+Button/constants/align_to_largest_stylebox = 1
+Button/constants/outline_size = 2
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_aojvb")
+Button/styles/disabled = null
+Button/styles/hover = ExtResource("2_yi5rd")
+Button/styles/normal = ExtResource("3_c6457")
+Button/styles/pressed = ExtResource("2_xyd4m")
+Label/colors/font_color = Color(1, 1, 0.701961, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/constants/outline_size = 8
+Label/font_sizes/font_size = 30
+Label/fonts/font = ExtResource("1_aojvb")
+LineEdit/fonts/font = ExtResource("1_aojvb")
+TextEdit/fonts/font = ExtResource("1_aojvb")

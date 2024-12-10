@@ -3,18 +3,21 @@
 public partial class MainSceneScript : Node2D
 {
     private PackedScene pauseMenuScene;
-    private Node pauseMenuInstance;
     private AudioStreamPlayer audioPlayer;
+    private Control pauseMenu;
 
     private void InitializeAudioPlayer()
     {
         //FindAudioPlayerByName("Background").Play();
+        AddToGroup("MainSceneScript");
     }
 
     public override void _Ready()
     {
         InitializeAudioPlayer();
-        pauseMenuScene = (PackedScene)GD.Load("res://Scenes/PauseMenu.tscn");
+        pauseMenu = GetNode<Control>("PauseMenu");
+        pauseMenu.Visible = false;
+
     }
 
     public override void _Process(double delta)
@@ -25,24 +28,19 @@ public partial class MainSceneScript : Node2D
         }
     }
 
-    private void TogglePause()
+    public void TogglePause()
     {
         if (GetTree().Paused)
         {
             // Reanudar el juego
             GetTree().Paused = false;
-            if (pauseMenuInstance != null)
-            {
-                pauseMenuInstance.QueueFree(); // Eliminar el menú de pausa
-                pauseMenuInstance = null;
-            }
+            pauseMenu.Visible = false;
         }
         else
         {
             // Pausar el juego
             GetTree().Paused = true;
-            pauseMenuInstance = pauseMenuScene.Instantiate();
-            AddChild(pauseMenuInstance);
+            pauseMenu.Visible = true;
         }
     }
     private AudioStreamPlayer FindAudioPlayerByName(string name)
