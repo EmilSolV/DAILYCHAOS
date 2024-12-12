@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://v08c8rkf326q"]
+[gd_scene load_steps=12 format=3 uid="uid://v08c8rkf326q"]
 
 [ext_resource type="Script" path="res://Scripts/Menu.cs" id="1_iwg88"]
 [ext_resource type="AudioStream" uid="uid://pyv6ax2guwat" path="res://Assets/Audio/LOOPMENUUUU.wav" id="2_cyq73"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d1xbqgi1xjftn" path="res://Assets/FONDOOO.png" id="3_avjn2"]
 [ext_resource type="Script" path="res://Scripts/AudioStreamPlayer2d.cs" id="3_vi0or"]
 [ext_resource type="Theme" uid="uid://lwscsr5alf2d" path="res://MainTheme.tres" id="6_r0uu6"]
+[ext_resource type="Script" path="res://Scripts/VBoxContainer.cs" id="7_1npcp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_opmqp"]
 texture = ExtResource("2_f108d")
@@ -170,9 +171,14 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.66667, 1.37736)
 theme = ExtResource("6_r0uu6")
+script = ExtResource("7_1npcp")
 
-[node name="StartButton2" type="Button" parent="Background/VBoxContainer"]
+[node name="StartButton" type="Button" parent="Background/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+focus_next = NodePath("../QuitButton")
+focus_previous = NodePath("../QuitButton")
 text = "JUGAR"
 
 [node name="CreditsButton" type="Button" parent="Background/VBoxContainer"]
@@ -182,10 +188,15 @@ text = "CREDITOS"
 
 [node name="QuitButton" type="Button" parent="Background/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../StartButton")
+focus_neighbor_bottom = NodePath("../StartButton")
+focus_next = NodePath("../StartButton")
+focus_previous = NodePath("../StartButton")
 text = "SALIR"
 
 [node name="MessageLabel" type="Label" parent="."]
 z_index = 1
+layout_mode = 0
 offset_left = -2.0
 offset_top = 207.0
 offset_right = 608.0
@@ -206,6 +217,7 @@ autowrap_mode = 3
 
 [node name="MessageLabel2" type="Label" parent="."]
 z_index = 1
+layout_mode = 0
 offset_left = -256.0
 offset_top = 195.0
 offset_right = 354.0
@@ -214,10 +226,10 @@ scale = Vector2(0.441359, 0.517234)
 theme = ExtResource("6_r0uu6")
 theme_override_colors/font_outline_color = Color(0.194068, 1.32841e-05, 0.788906, 1)
 theme_override_font_sizes/font_size = 50
-text = "Malena Calatayú
+text = "Rina
 
 
-Emil Vásquez
+3mil
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -225,6 +237,7 @@ autowrap_mode = 3
 
 [node name="MessageLabel3" type="Label" parent="."]
 z_index = 1
+layout_mode = 0
 offset_left = -251.0
 offset_top = 217.0
 offset_right = 359.0
@@ -234,7 +247,7 @@ theme = ExtResource("6_r0uu6")
 theme_override_colors/font_color = Color(0.858883, 0.669423, 0.885493, 1)
 theme_override_colors/font_outline_color = Color(0.457884, 2.49799e-05, 0.366077, 1)
 theme_override_font_sizes/font_size = 40
-text = "@male.vale
+text = "@male.val3
 
 
 
@@ -244,6 +257,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[connection signal="pressed" from="Background/VBoxContainer/StartButton2" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Background/VBoxContainer/CreditsButton" to="." method="_on_CreditsButton_pressed"]
 [connection signal="pressed" from="Background/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

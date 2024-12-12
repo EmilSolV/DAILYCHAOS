@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjmeyplvlkfhx"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_o5nuy"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_4bmkc"]
+[ext_resource type="Texture2D" uid="uid://bda7d50cqp5et" path="res://Assets/iconos/bienestar/sleep.png" id="3_6cm4b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lohlp"]
+
+[node name="CupcakeArea2D" type="Node2D"]
+script = ExtResource("1_o5nuy")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_4bmkc")
+Points = 15
+Group = "BIENESTAR"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(0.0751936, 0.0914326)
+texture = ExtResource("3_6cm4b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(2.0171, -2.64231)
+shape = SubResource("CircleShape2D_lohlp")

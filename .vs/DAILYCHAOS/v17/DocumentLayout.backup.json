@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\emilv\\source\\DAILYCHAOS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\mainscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\mainscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\stagemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\stagemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,32 +11,48 @@
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\scorepoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\scorepoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\timerlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\timerlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\topiclabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\topiclabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\movedown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\movedown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\globalaudioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\globalaudioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\mainscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\mainscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\vboxcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\vboxcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\scorepoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\scorepoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\topiclabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|solutionrelative:scripts\\topiclabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70E9BD18-D409-4EAD-8D46-0D93D6B77F96}|DAILYCHAOS.csproj|c:\\users\\emilv\\source\\dailychaos\\scripts\\creditsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,75 +66,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "VBoxContainer.cs",
+              "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\VBoxContainer.cs",
+              "RelativeDocumentMoniker": "Scripts\\VBoxContainer.cs",
+              "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\VBoxContainer.cs",
+              "RelativeToolTip": "Scripts\\VBoxContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T19:17:32.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Scripts\\PauseMenu.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\PauseMenu.cs",
               "RelativeToolTip": "Scripts\\PauseMenu.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T00:43:22.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "MainSceneScript.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\MainSceneScript.cs",
               "RelativeDocumentMoniker": "Scripts\\MainSceneScript.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\MainSceneScript.cs",
               "RelativeToolTip": "Scripts\\MainSceneScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T20:22:29.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\Menu.cs",
               "RelativeDocumentMoniker": "Scripts\\Menu.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\Menu.cs",
               "RelativeToolTip": "Scripts\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T16:29:58.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "GlobalAudioPlayer.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\GlobalAudioPlayer.cs",
               "RelativeDocumentMoniker": "Scripts\\GlobalAudioPlayer.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\GlobalAudioPlayer.cs",
               "RelativeToolTip": "Scripts\\GlobalAudioPlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:17:06.337Z"
+              "WhenOpened": "2024-12-10T00:17:06.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MoveDown.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\MoveDown.cs",
               "RelativeDocumentMoniker": "Scripts\\MoveDown.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\MoveDown.cs",
               "RelativeToolTip": "Scripts\\MoveDown.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T16:28:38.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "TopicLabel.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\TopicLabel.cs",
               "RelativeDocumentMoniker": "Scripts\\TopicLabel.cs",
@@ -143,20 +161,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "TimerLabel.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\TimerLabel.cs",
               "RelativeDocumentMoniker": "Scripts\\TimerLabel.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\TimerLabel.cs",
               "RelativeToolTip": "Scripts\\TimerLabel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T17:00:41.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "ScorePoints.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\ScorePoints.cs",
               "RelativeDocumentMoniker": "Scripts\\ScorePoints.cs",
@@ -164,37 +182,38 @@
               "RelativeToolTip": "Scripts\\ScorePoints.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:40:58.446Z"
+              "WhenOpened": "2024-12-01T15:40:58.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T04:37:25.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "StageManagerScript.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\StageManagerScript.cs",
               "RelativeDocumentMoniker": "Scripts\\StageManagerScript.cs",
               "ToolTip": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\StageManagerScript.cs",
               "RelativeToolTip": "Scripts\\StageManagerScript.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAnwJgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAYwF8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T05:29:27.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ObjectSpawner.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\ObjectSpawner.cs",
               "RelativeDocumentMoniker": "Scripts\\ObjectSpawner.cs",
@@ -206,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CreditsScript.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\CreditsScript.cs",
               "RelativeDocumentMoniker": "Scripts\\CreditsScript.cs",
@@ -218,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\emilv\\source\\DAILYCHAOS\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Scripts\\Player.cs",

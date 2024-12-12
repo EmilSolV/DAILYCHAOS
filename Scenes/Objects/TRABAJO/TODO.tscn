@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://b84tmhb4fqh7c"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_p2ky1"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_s52qw"]
+[ext_resource type="Texture2D" path="res://Assets/iconos/trabajo/hard-work.png" id="3_sccgn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lohlp"]
+
+[node name="CupcakeArea2D" type="Node2D"]
+script = ExtResource("1_p2ky1")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_s52qw")
+Points = 15
+Group = "TRABAJO"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-1, 5)
+scale = Vector2(0.0763613, 0.0885167)
+texture = ExtResource("3_sccgn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 6)
+scale = Vector2(1.94102, -2.1972)
+shape = SubResource("CircleShape2D_lohlp")

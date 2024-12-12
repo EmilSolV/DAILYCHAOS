@@ -11,19 +11,6 @@ public partial class PauseMenu : Control
         
     }
 
-    private void InitializeAudioPlayer()
-    {
-    }
-
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-    //public override void _Process(double delta)
-    //{
-    //    if (Input.IsActionJustPressed("Pause"))
-    //    {
-    //        _on_continue_button_pressed();
-    //    }
-    //}
-
     private void _on_continue_button_pressed()
     {
         var mainScenes = GetTree().GetNodesInGroup("MainSceneScript");

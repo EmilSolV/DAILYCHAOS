@@ -3,16 +3,15 @@
 public partial class TimerLabel : Label
 {
     [Export]
-    public float TimeLeft = 60.0f; // Public variable to set the timer duration
+    public float TimeLeft = 60.0f;
 
-    private Control gameOverMenu; // Menú de fin de juego
-    private Label messageLabel; // Etiqueta para mostrar el mensaje (ganaste/perdiste)
-    private Label pointsNumberLabel; // Etiqueta para el número de puntaje
-    private Button continueButton; // Botón para continuar
-    private Button quitButton; // Botón para salir
-    private GameManager gameManager; // Referencia al script GameManager
+    private Control gameOverMenu;
+    private Label messageLabel;
+    private Label pointsNumberLabel;
+    private Button continueButton;
+    private Button quitButton;
+    private GameManager gameManager;
 
-    // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
         AddToGroup("Timer");
@@ -33,7 +32,6 @@ public partial class TimerLabel : Label
         quitButton.Pressed += _on_quit_button_pressed;
     }
 
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
         if (TimeLeft > 0)
@@ -87,6 +85,9 @@ public partial class TimerLabel : Label
         }
 
         pointsNumberLabel.Text = points.ToString();
+
+        var continueButton = GetNode<Button>("GameOverMenu/VBoxContainer/RetryButton");
+        continueButton.GrabFocus();
     }
 
     private void PlaySound(string soundName)
@@ -114,19 +115,15 @@ public partial class TimerLabel : Label
 
     private void _on_retry_button_pressed()
     {
-        // Reanudar el juego
         GetTree().Paused = false;
 
-        // Ocultar el menú
         gameOverMenu.Visible = false;
 
-        // Reiniciar la escena
         GetTree().ReloadCurrentScene();
     }
 
     private void _on_quit_button_pressed()
     {
-        // Salir del juego
         GetTree().Quit();
     }
 

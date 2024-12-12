@@ -14,7 +14,7 @@ public partial class GlobalAudioPlayer : Node
             AddChild(_audioPlayer);
             _audioPlayer.Stream = GD.Load<AudioStream>("res://path/to/your/audio/file.ogg");
             _audioPlayer.Play();
-            // Asegúrate de que este nodo no se elimine al cambiar de escena
+
             SetProcess(false);
             GetTree().Root.AddChild(this);
         }

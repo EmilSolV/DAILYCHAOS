@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpbkf2dwn8142"]
+
+[ext_resource type="Script" path="res://Scripts/MoveDown.cs" id="1_v22j3"]
+[ext_resource type="Script" path="res://Scripts/Collectible.cs" id="2_liac1"]
+[ext_resource type="Texture2D" path="res://Assets/iconos/hogar/pay-per-click.png" id="3_khrom"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lohlp"]
+
+[node name="CupcakeArea2D" type="Node2D"]
+script = ExtResource("1_v22j3")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_liac1")
+Points = 15
+Group = "HOGAR"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-1, 5)
+scale = Vector2(0.0760098, 0.0768606)
+texture = ExtResource("3_khrom")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 5)
+scale = Vector2(1.90796, -2.03061)
+shape = SubResource("CircleShape2D_lohlp")

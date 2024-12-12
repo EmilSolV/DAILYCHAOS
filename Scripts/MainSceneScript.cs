@@ -8,7 +8,6 @@ public partial class MainSceneScript : Node2D
 
     private void InitializeAudioPlayer()
     {
-        //FindAudioPlayerByName("Background").Play();
         AddToGroup("MainSceneScript");
     }
 
@@ -32,15 +31,16 @@ public partial class MainSceneScript : Node2D
     {
         if (GetTree().Paused)
         {
-            // Reanudar el juego
             GetTree().Paused = false;
             pauseMenu.Visible = false;
         }
         else
         {
-            // Pausar el juego
             GetTree().Paused = true;
             pauseMenu.Visible = true;
+
+            var continueButton = GetNode<Button>("PauseMenu/VBoxContainer/ContinueButton");
+            continueButton.GrabFocus();
         }
     }
     private AudioStreamPlayer FindAudioPlayerByName(string name)

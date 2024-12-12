@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 public partial class StageManagerScript : Node
 {
     [Export]
-    public float WaitTime = 12.0f; // Public variable to set the timer duration
+    public float WaitTime = 12.0f;
     [Export]
     public int ObjectSpeedUpdate = 60;
     [Export]
     public float SpawnIntervalUpdate = 0.8f;
 
-    public string CurrentStageGroup { get; private set; } // Grupo válido para la etapa actual
+    public string CurrentStageGroup { get; private set; }
 
-    private int currentStageIndex = 0; // Índice de la etapa actual
-    private readonly string[] stageGroups = { "TRABAJO", "ESTUDIO", "HOGAR", "OCIO" };
+    private int currentStageIndex = 0;
+    private readonly string[] stageGroups = { "TRABAJO", "ESTUDIO", "HOGAR", "BIENESTAR" };
 
     private Timer stageTimer;
     private Label topicLabel;
@@ -94,7 +94,6 @@ public partial class StageManagerScript : Node
 
         audioPlayer.Play();
         await ToSignal(audioPlayer, "finished");
-        //audioPlayer.Stop();
         audioPlayerFin.Play();
         await ToSignal(audioPlayerFin, "finished");
     }
