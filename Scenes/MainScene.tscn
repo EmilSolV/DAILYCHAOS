@@ -296,10 +296,18 @@ rotation = 5.26339
 scale = Vector2(5.16, 9.88)
 shape = SubResource("RectangleShape2D_5popu")
 
+[node name="PanelContainer" type="PanelContainer" parent="Background"]
+offset_left = -616.0
+offset_top = -351.0
+offset_right = -576.0
+offset_bottom = -311.0
+scale = Vector2(30.6482, 17.7382)
+
 [node name="Player" type="Node" parent="."]
 
 [node name="Player" type="Node2D" parent="Player"]
 position = Vector2(11, 219)
+scale = Vector2(0.788451, 0.770157)
 
 [node name="PlayerBody" type="CharacterBody2D" parent="Player/Player"]
 position = Vector2(2, -2)
